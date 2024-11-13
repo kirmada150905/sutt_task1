@@ -61,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 );
               },
-              child: const Text("Clik me Daddy!"))
+              child: const Text("Clik me"))
         ],
       ),
     );
