@@ -13,7 +13,6 @@ class _SettingsState extends State<Settings> {
   bool _darkMode = false;
   bool _notificationsEnabled = true;
   String _username = "User123"; // Placeholder for username
-
   @override
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProvider>(context);
@@ -81,17 +80,13 @@ class _SettingsState extends State<Settings> {
             const Divider(),
 
             // Profile Picture Section
-            ListTile(
-              title: const Text('Profile Picture'),
-              leading: const CircleAvatar(
-                backgroundColor: Colors.grey,
-                child: Icon(Icons.person),
-              ),
-              onTap: () {
-                // Handle profile picture change
-              },
-            ),
-
+            const ListTile(
+                title: Text('Profile Picture'),
+                leading: CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  child: Icon(
+                      Icons.person), // Display the icon when there's no image
+                )),
             const Divider(),
 
             // Save Button
